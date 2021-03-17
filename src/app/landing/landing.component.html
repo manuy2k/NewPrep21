@@ -1,0 +1,9 @@
+<button mat-raised-button color="warn" class="index-button" (click)="basics()" *ngIf="home" routerLink="">Home</button>
+<button mat-raised-button color="primary" class="index-button" routerLink="/compCom/compHome" (click)="basics()" *ngIf="!home">Component Communication</button>
+<button mat-raised-button color="primary" class="index-button" routerLink="/dide/dideHome" (click)="basics()" *ngIf="!home">Directives - Decorators</button>
+<button mat-raised-button color="primary" class="index-button" (click)="basics()" *ngIf="!home">Reactive Forms</button>
+<button mat-raised-button color="primary" class="index-button"(click)="basics()" *ngIf="!home">Pipes - Custom Pipes</button>
+<button mat-raised-button color="primary" class="index-button" routerLink="/routeHome/routingHome" (click)="basics()" *ngIf="!home">Routing - Routes</button>
+<button mat-raised-button color="primary" class="index-button" routerLink="/rxjsHome/rxjslaunch" (click)="basics()" *ngIf="!home">Rxjs Operators</button>
+<button mat-raised-button color="primary" class="index-button" (click)="basics()" *ngIf="!home">Observables</button>
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+<button mat-raised-button color="warn" (click)="launchOps()">Launch Operators</button>
+<div *ngIf="visible">
+  <p>
+    Usage of Of Operator
+  </p>
+  <div *ngFor = "let i of ofOpRes">
+   Value is: {{ i }}
+  </div>
+</div>
+
+<div *ngIf="visible">
+  <p>
+    Usage of From Operator
+  </p>
+  <div *ngFor = "let i of fromOpRes">
+   Value is: {{ i }}
+  </div>
+</div>
